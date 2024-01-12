@@ -1,0 +1,7 @@
+{
+  "name": "EGMA TEAMS",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

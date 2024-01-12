@@ -1,0 +1,59 @@
+@keyframes start{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+ion-content {
+    --background: url('../../assets/img/background.jpg') no-repeat center fixed;
+    background-size: cover;
+
+    .sign-up-content{
+        width: 100%;
+        height: 70vh;
+        background-color: #fff;
+        position: fixed;
+        bottom: 0;
+        border-top-left-radius: 46px;
+        border-top-right-radius: 46px;
+        animation-name: start;
+        animation-duration: 500ms;
+
+        padding: 20px;
+
+        p{
+            color: #a7a7a7;
+            margin-top: 0px;
+        }
+
+        form{
+            
+
+            ion-item,
+            ion-button{
+               margin-top: 25px;
+            }
+
+            ion-button{
+                width: 100%;
+                --border-radius: 5px;
+                color: #fff;
+            }
+
+            p{
+                width: fit-content;
+                margin: 0 auto;
+                margin-top: 15px;
+
+                strong{
+                    color: var(--ion-color-primary);
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
