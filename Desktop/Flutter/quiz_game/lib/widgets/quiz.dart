@@ -13,9 +13,13 @@ class _QuizState extends State<Quiz> {
     new QuizModel(
         question: "¿Pueden nadar los gorilas?",
         correct: "Si",
+        wrong: ["No", "Puede ser", "demas"]),
+    new QuizModel(
+        question: "¿Cuál es el ojo defectuoso de Popeye?",
+        correct: "el derecho",
         wrong: ["No", "Puede ser", "demas"])
   ];
-  final int _actualIndex = 0;
+  int _actualIndex = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +45,14 @@ class _QuizState extends State<Quiz> {
                       fontSize: 18),
                 ),
               ),
-            )
+            ),
+            TextButton(
+                onPressed: () {
+                  setState(() {
+                    _actualIndex = _actualIndex + 1;
+                  });
+                },
+                child: Text('Hola'))
           ],
         ),
       )),
